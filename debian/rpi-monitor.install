@@ -1,0 +1,2 @@
+src/rpi-monitor /usr/bin
+collectors/ /usr/share/rpi-monitor

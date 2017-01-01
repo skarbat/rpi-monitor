@@ -112,7 +112,7 @@ int main(int argc, char *argv[])
     int8_t opacity = 120;
     uint32_t displayNumber = 0, layer = 32000;
     GUI_COLOR color_text={0,0,0}, color_win={255,255,255};
-    char *collector_process="./rpi-monitor-gpumem.py";
+    char *collector_process="/usr/share/rpi-monitor/collectors/rpi-monitor-gpumem.py";
     int x_position=10, y_position=10, width=250, height=150;
     int wait_seconds=1;
 
