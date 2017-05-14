@@ -1,4 +1,4 @@
-##RPI Monitor
+## RPI Monitor
 
 A simple data visualization tool for the Raspberry - write your own python script to monitor whichever data you can think of.
 
