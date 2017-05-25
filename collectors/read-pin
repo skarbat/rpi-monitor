@@ -3,7 +3,7 @@
 #  Reads BCM pin number provided, returns HIGH or LOW.
 #  Return code 0=LOW, 1=HIGH, different value means error.
 #
-#  If you add the -q parameter no message will be displayed.
+#  TODO: If you add the -q parameter no message will be displayed.
 #
 
 pin_number=$1
