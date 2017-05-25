@@ -1,0 +1,38 @@
+#!/bin/bash
+#
+#  Reads BCM pin number provided, returns HIGH or LOW.
+#  Return code 0=LOW, 1=HIGH, different value means error.
+#
+#  If you add the -q parameter no message will be displayed.
+#
+
+pin_number=$1
+mute=$2
+
+function read_pin()
+{
+    if [ ! -f /sys/class/gpio/gpio$pin_number/direction ]; then
+        echo "$pin_number" > /sys/class/gpio/export
+	echo "in" > /sys/class/gpio/gpio$pin_number/direction
+    fi
+
+    if [ `cat /sys/class/gpio/gpio$pin_number/value` == "1" ]; then
+	echo "HIGH"
+	return 1
+    else
+	echo "LOW"
+	return 0
+    fi
+}
+
+if [ `id -u` != 0 ]; then
+    echo "You need root permissions"
+    exit -1
+fi
+
+if [ "$pin_number" == "" ]; then
+    echo "Need a BCM PIN number"
+    exit -1
+else
+    read_pin
+fi
