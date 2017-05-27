@@ -1,0 +1,9 @@
+[Unit]
+Description=RPI Monitor
+
+[Service]
+ExecStart=/usr/bin/rpi-monitor -x 200
+Restart=no
+
+[Install]
+WantedBy=getty@tty1.service

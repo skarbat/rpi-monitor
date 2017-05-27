@@ -1,2 +1,3 @@
 src/rpi-monitor /usr/bin
 collectors/ /usr/share/rpi-monitor
+systemd/* /usr/lib/systemd/system

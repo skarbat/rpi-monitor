@@ -1,0 +1,9 @@
+[Unit]
+Description=RPI Monitor
+
+[Service]
+ExecStart=/usr/bin/rpi-monitor -x 500 -c /usr/share/rpi-monitor/collectors/rpi-monitor-bcm.py
+Restart=no
+
+[Install]
+WantedBy=getty@tty1.service
