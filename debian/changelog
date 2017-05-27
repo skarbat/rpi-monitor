@@ -1,3 +1,9 @@
+rpi-monitor (1.1-1) unstable; urgency=low
+
+  * Added monitoring of BCM input pins
+
+ -- Albert Casals <skarbat@gmail.com>  Fri, 26 May 2017 00:42:31 +0100
+
 rpi-monitor (1.0-1) unstable; urgency=low
 
   * Created initial version
