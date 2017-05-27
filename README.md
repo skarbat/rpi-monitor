@@ -4,8 +4,10 @@ A simple data visualization tool for the Raspberry - write your own python scrip
 
 ![Sample Monitors](https://raw.github.com/skarbat/rpi-monitor/master/screenshots/rpimonitor-sample.png)
 
-rpi-monitor can sit above any applications written for the RaspberryPI without disturbing their opperations.
+rpi-monitor sits transparently above GUI applications without disturbing their visibility.
 
-(c) Albert Casals, November-December 2016.
+To run the monitor, `sudo systemctl enable rpi-monitor` and/or `rpi-monitor-bcm`, then start manually or reboot the PI.
+
+Albert Casals, 2016-2017.
 
 Graphics portions in directory "common" from Andrew Duncan - Read the LICENSE file for details.
